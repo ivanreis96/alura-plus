@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root{
+    --branco-primaria:#ffffff;
+    --cinza-secundaria:#C0C0C0;
+    --botao-azul:#167bf7;
+    --cor-de-fundo:#00030C;
+    --cor-text-pouco-destaque:#f9f9f9;
+
+    --tamanho-fonte1:1.6rem;
+    --tamanho-fonte2:2.8rem;
+    --tamanho-fonte3:1.2rem;
+    --tamanho-fonte4:4.8rem;
+    --tamanho-fonte5:3.2rem;
+    --tamanho-fonte6:1.4rem;
+}
+
+*{margin:0px; padding:0px; font-size:62.5%; box-sizing: border-box;}
+
+h1,h2,h3,h4,p{margin:0; font-size:inherit;}
+
+
+body{background-color:var(--cor-de-fundo); display: flex; justify-content: center; color:var(--branco-primaria); font-family: 'Inter', sans-serif; flex-wrap: wrap;}
+
+.alinhamento{display: flex; flex-direction: column; width:100%; padding-bottom:100px;}
+.container{min-height:100vh; display:flex; align-items: center;}
+
+.principal{background-size: contain; background-image: url('../img/Background.png'); background-repeat: no-repeat; background-position: right center; display: flex; padding-left:54px;}
+.principal__conteudo{display: flex; flex-direction: column; width:100%; max-width:588px; align-items: center;}
+.principal__titulo{font-size:var(--tamanho-fonte2); text-align: center; font-weight:700; margin-bottom:22px;}
+.principal__botoes{display: flex; gap:16px; flex-direction: column; width:100%; margin-top:54px;}
+.principal__botao{padding:16px; display: block; border-radius:8px;width:100%; font-size:var(--tamanho-fonte1); text-align: center; text-decoration: none; transition: .2s;}
+
+.botao_assine{background-color:var(--botao-azul); color:var(--branco-primaria); border: 1px solid var(--botao-azul);}
+
+.botao_assine:hover{border:1px solid var(--botao-azul); color:var(--botao-azul); background-color:transparent; }
+
+.botao__somente{border:1px solid var(--branco-primaria); color:var(--branco-primaria); background-color: transparent;}
+.botao__somente:hover{border-color:var(--botao-azul); background-color: var(--botao-azul);}
+.principal__aviso{width:100%; text-align: center; margin-top:10px; color:var(--cinza-secundaria); font-size:var(--tamanho-fonte3);} 
+
+.dados{width:100%; align-items:center; padding:0px 170px; gap:70px;}
+
+.dados.espacamento2{gap:44px;}
+
+.dados figure{width:100%; float:left; height:auto; object-fit: contain;}
+.dados figure img{object-fit: contain;}
+
+.img_plataforma{max-width:498px;}
+
+.dados__textos{display: flex; flex-direction: column; gap:8px;}
+
+.dados__textos__t1{width:100%; color:var(--branco-primaria); font-size: var(--tamanho-fonte4); font-weight: 700;}
+.dados__textos__t2{width:100%; color:var(--cor-text-pouco-destaque); font-size:var(--tamanho-fonte1); text-align: left; opacity: .8; filter:opacity(80);}
+
+.dados__telas{gap:16px; width:100%; display: flex; flex-direction: column; align-items: flex-start; }
+.dados__telas__botao{padding:16px; color:var(--branco-primaria); background-color:var(--botao-azul); transition:.2s; font-size: var(--tamanho-fonte1); border:1px solid var(--botao-azul); width:auto; border-radius:5px; text-decoration: none;}
+.dados__telas__botao:hover{background-color:transparent; border-color:var(--branco-primaria);}
+
+.dispositivos{text-align: center;}
+.dispositivos__titulo{margin-bottom:40px; font-size:var(--tamanho-fonte4); font-weight:700; color:var(--branco-primaria);}
+.dispositivos__lista{display: flex; gap:69px; justify-content: center;}
+.lista__item{list-style-type: none; display: flex; flex-direction: column; align-items: center; gap:16px;}
+.lista__item__nome{font-size:var(--tamanho-fonte5); color:var(--branco-primaria); font-weight:700;}
+
+.rodape{display:flex; flex-direction: column; align-items: center; max-width: 1200px;}
+.rodape__logo{margin-bottom:40px;}
+.rodape__lista{display: flex; gap:16px; flex-wrap: wrap; list-style-type: none;}
+.rodape__link{font-size: var(--tamanho-fonte1); color: var(--branco-primaria); text-decoration: none;}
+.rodape__link:hover{color:var(--botao-azul);}
+
+.rodape__copyright{text-align: center; color:var(--cinza-secundaria); font-size:var(--tamanho-fonte6); margin-top:25px;}
